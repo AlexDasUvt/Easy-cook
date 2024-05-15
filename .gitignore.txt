@@ -1,3 +1,5 @@
 $ cat .gitignore
 .vs
 *.docx
+x64
+ShopList.txt

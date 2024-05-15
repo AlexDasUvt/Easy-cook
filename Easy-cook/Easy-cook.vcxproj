@@ -128,6 +128,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Easy-cook.cpp" />
+    <ClCompile Include="src\ShopList.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ShopList.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

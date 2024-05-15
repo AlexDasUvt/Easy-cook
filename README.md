@@ -6,7 +6,6 @@ In this app user will be able:
 * to manage shop list containing products that should be bought.
 * to create own lists of favourite recepies.
 
-### Changelog
+### How to use
 
-10.05.2024
-First commit to repository, basic program structure.
+To be written
