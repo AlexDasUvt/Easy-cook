@@ -2,6 +2,7 @@
 #include <string>
 #include <stdlib.h>
 #include ".\src\ShopList.h"
+#include ".\src\RecipesFunc.h"
 using namespace std;
 
 int main()
@@ -13,7 +14,7 @@ int main()
 		system("cls");
 		switch (menu) {
 		case 1:
-			//Recipes menu TODO
+			RecipesFunc();
 			break;
 		case 2:
 			shopList();

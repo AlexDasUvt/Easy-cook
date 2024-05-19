@@ -1,0 +1,24 @@
+{
+  "recipes": [
+    {
+      "name": "a",
+      "id": 1,
+      "ingridients": {
+        "in1": "aa",
+        "in2":  "bb"
+      },
+      "steps": "1. 2.",
+      "tags": ["tag1", "tag2"]
+    },
+    {
+      "name": "b",
+      "id": 2,
+      "ingridients": {
+        "in1": "ab",
+        "in2": "ab"
+      },
+      "steps": "1. 2.",
+      "tags": [ "tag1", "tag2" ]
+    }
+  ]
+}
