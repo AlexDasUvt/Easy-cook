@@ -21,7 +21,10 @@
     <ClCompile Include="src\ShopList.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\RecipesFunc.cpp">
+    <ClCompile Include="src\RecipesManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MyLIst.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -29,7 +32,10 @@
     <ClInclude Include="src\ShopList.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\RecipesFunc.h">
+    <ClInclude Include="src\RecipesManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MyList.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -38,5 +44,8 @@
       <Filter>Resource Files</Filter>
     </None>
     <None Include="packages.config" />
+    <None Include="MyList.csv">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

@@ -7,7 +7,30 @@
 
 using namespace std;
 
-void LineModifyDelete(int lineNum, const string newContent = "") {
+class ShopList {
+public:
+	ShopList();
+	void LineModifyDelete(int, const string);
+	int ViewShopList();
+	void ModifyShopList();
+};
+
+ShopList::ShopList() {
+	ifstream file(FILENAME);
+	if (!file) {
+		cout << "Unable to find ShopList.\n" << endl;
+		ofstream file(FILENAME);
+		file << "Shopping list\n" << "--------------------------------------\n" << endl;
+		file.close();
+		cout << "ShopList created.\n" << endl;
+	}
+	else {
+		file.close();
+		cout << "ShopList found.\n" << endl;
+	}
+}
+
+void ShopList::LineModifyDelete(int lineNum, const string newContent = "") {
 	ifstream inFile(FILENAME);
 
 	ofstream outFile("ShopList/temp.txt");
@@ -56,7 +79,7 @@ void LineModifyDelete(int lineNum, const string newContent = "") {
 	}
 }
 
-int ViewShopList() {
+int ShopList::ViewShopList() {
 	ifstream file(FILENAME);
 
 	string line;
@@ -78,9 +101,9 @@ int ViewShopList() {
 	return 1;
 }
 
-void ModifyShopList() {
+void ShopList::ModifyShopList() {
 	while (true) {
-		if (ViewShopList() == 0) {
+		if (ShopList::ViewShopList() == 0) {
 			cout << "The list is empty!\n" << endl;
 			return;
 		};
@@ -113,14 +136,14 @@ void ModifyShopList() {
 			return;
 		}
 		else if (operation == 'd') {
-			LineModifyDelete(lineNum);
+			ShopList::LineModifyDelete(lineNum);
 			break;
 		}
 		else if (operation == 'm') {
 			string newContent;
 			cout << "Enter the new content for the line: ";
 			cin >> newContent;
-			LineModifyDelete(lineNum, newContent);
+			ShopList::LineModifyDelete(lineNum, newContent);
 			break;
 		}
 
@@ -129,31 +152,22 @@ void ModifyShopList() {
 
 void shopList() {
 	int menu;
-	ifstream file(FILENAME);
-	if (!file) {
-		cout << "Unable to find ShopList.\n" << endl;
-		ofstream file(FILENAME);
-		file << "Shopping list\n" << "--------------------------------------\n" << endl;
-		file.close();
-		cout << "ShopList created.\n" << endl;
-	}
-	else {
-		file.close();
-		cout << "ShopList found.\n" << endl;
-	}
+	ShopList shp = ShopList();
+
 	while (true) {
 		menu = 1;
-		cout << "Please select what do you want to do.\n" << "1. View shop list(default)\n" << "2. Configure shop list\n" << "3. Exit shop list\n" << endl;
-		cin >> menu;
+		string input;
+		cout << "Please select what do you want to do.\n" << "1. View shop list\n" << "2. Configure shop list\n" << "3. Exit shop list\n" << endl;
+		cin >> input;
 		system("cls");
 		switch (menu) {
 		case 1:
-			if (ViewShopList() == 0) {
+			if (shp.ViewShopList() == 0) {
 				cout << "The list is empty!\n" << endl;
 			};
 			break;
 		case 2:
-			ModifyShopList();
+			shp.ModifyShopList();
 			break;
 		case 3:
 			cout << "Returning to main menu...\n";

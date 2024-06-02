@@ -1,24 +1,85 @@
 {
   "recipes": [
     {
-      "name": "a",
+      "name": "Spaghetti Carbonara",
       "id": 1,
-      "ingridients": {
-        "in1": "aa",
-        "in2":  "bb"
+      "ingredients": {
+        "spaghetti": "200g",
+        "bacon": "100g",
+        "eggs": "2",
+        "parmesan": "50g",
+        "black pepper": "to taste",
+        "salt": "to taste"
       },
-      "steps": "1. 2.",
-      "tags": ["tag1", "tag2"]
+      "steps": "1. Cook spaghetti according to package instructions. 2. In a separate pan, cook bacon until crispy. 3. Beat eggs and mix with grated parmesan. 4. Drain spaghetti and mix immediately with egg mixture and bacon. 5. Season with salt and black pepper.",
+      "tags": [ "Italian", "Pasta", "Quick" ]
     },
     {
-      "name": "b",
+      "name": "Chicken Tikka Masala",
       "id": 2,
-      "ingridients": {
-        "in1": "ab",
-        "in2": "ab"
+      "ingredients": {
+        "chicken breasts": "500g",
+        "yogurt": "200g",
+        "garlic": "3 cloves",
+        "ginger": "1 inch piece",
+        "garam masala": "2 tsp",
+        "turmeric": "1 tsp",
+        "tomato puree": "200g",
+        "cream": "100ml",
+        "coriander": "to garnish"
       },
-      "steps": "1. 2.",
-      "tags": [ "tag1", "tag2" ]
+      "steps": "1. Marinate chicken in yogurt, garlic, ginger, garam masala, and turmeric for at least 1 hour. 2. Cook chicken in a pan until done. 3. In the same pan, add tomato puree and simmer for 10 minutes. 4. Add cream and cooked chicken. 5. Garnish with coriander.",
+      "tags": [ "Indian", "Spicy", "Dinner" ]
+    },
+    {
+      "name": "Beef Tacos",
+      "id": 3,
+      "ingredients": {
+        "ground beef": "500g",
+        "onion": "1",
+        "garlic": "2 cloves",
+        "taco seasoning": "2 tbsp",
+        "tortillas": "8",
+        "lettuce": "1 cup",
+        "tomato": "1",
+        "cheddar cheese": "1 cup",
+        "sour cream": "to serve"
+      },
+      "steps": "1. Cook ground beef with chopped onion and garlic. 2. Add taco seasoning and cook for another 5 minutes. 3. Serve beef mixture in tortillas. 4. Top with lettuce, tomato, cheese, and sour cream.",
+      "tags": [ "Mexican", "Street Food", "Family" ]
+    },
+    {
+      "name": "Vegetable Stir Fry",
+      "id": 4,
+      "ingredients": {
+        "broccoli": "1 head",
+        "carrot": "1",
+        "bell pepper": "1",
+        "snap peas": "100g",
+        "soy sauce": "3 tbsp",
+        "ginger": "1 inch piece",
+        "garlic": "2 cloves",
+        "sesame oil": "1 tbsp"
+      },
+      "steps": "1. Cut all vegetables into bite-sized pieces. 2. Heat sesame oil in a wok and add ginger and garlic. 3. Add vegetables and stir fry for 5-7 minutes. 4. Add soy sauce and cook for another 2 minutes.",
+      "tags": [ "Asian", "Vegan", "Quick" ]
+    },
+    {
+      "name": "Chocolate Chip Cookies",
+      "id": 5,
+      "ingredients": {
+        "butter": "200g",
+        "sugar": "150g",
+        "brown sugar": "150g",
+        "eggs": "2",
+        "vanilla extract": "1 tsp",
+        "flour": "300g",
+        "baking soda": "1 tsp",
+        "salt": "1/2 tsp",
+        "chocolate chips": "200g"
+      },
+      "steps": "1. Preheat oven to 180°C. 2. Cream butter and sugars until fluffy. 3. Beat in eggs and vanilla extract. 4. Combine flour, baking soda, and salt, then add to butter mixture. 5. Stir in chocolate chips. 6. Drop spoonfuls of dough onto baking sheets and bake for 10-12 minutes.",
+      "tags": [ "Dessert", "Baking", "Sweet" ]
     }
   ]
 }

@@ -128,14 +128,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Easy-cook.cpp" />
-    <ClCompile Include="src\RecipesFunc.cpp" />
+    <ClCompile Include="src\MyLIst.cpp" />
+    <ClCompile Include="src\RecipesManager.cpp" />
     <ClCompile Include="src\ShopList.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\RecipesFunc.h" />
+    <ClInclude Include="src\MyList.h" />
+    <ClInclude Include="src\RecipesManager.h" />
     <ClInclude Include="src\ShopList.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="MyList.csv" />
     <None Include="packages.config" />
     <None Include="RecipesDB\RecipesDB.json" />
   </ItemGroup>
