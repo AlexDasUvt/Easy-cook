@@ -9,7 +9,7 @@ In this app user will be able:
 
 ## How to use
 
-Executable for the program is stored in `\x64` and should not be moved.
+Executable for the program is stored in `\x64/Debug` and should not be moved.
 
 ### Shop List
  
