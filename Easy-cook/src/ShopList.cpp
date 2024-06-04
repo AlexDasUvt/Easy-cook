@@ -57,8 +57,8 @@ void ShopList::LineModifyDelete(int lineNum, const string newContent = "") {
 		lineNumber++;
 	}
 	if (!lineFound && newContent.empty()) {
-		std::cerr << "Line " << lineNum - 2 << " not found." << std::endl;
-		std::remove("temp.txt");
+		cout << "Line " << lineNum - 2 << " not found." << endl;
+		remove("temp.txt");
 		return;
 	}
 	else if (!lineFound && !newContent.empty()) {
@@ -106,7 +106,7 @@ void ShopList::ModifyShopList() {
 		if (ShopList::ViewShopList() == 0) {
 			cout << "The list is empty!\n" << endl;
 			return;
-		};
+		}
 
 		int lineNum;
 		char operation;
@@ -155,10 +155,8 @@ void shopList() {
 	ShopList shp = ShopList();
 
 	while (true) {
-		menu = 1;
-		string input;
 		cout << "Please select what do you want to do.\n" << "1. View shop list\n" << "2. Configure shop list\n" << "3. Exit shop list\n" << endl;
-		cin >> input;
+		cin >> menu;
 		system("cls");
 		switch (menu) {
 		case 1:

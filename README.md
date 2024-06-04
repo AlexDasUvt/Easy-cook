@@ -9,25 +9,28 @@ In this app user will be able:
 
 ## How to use
 
-Executable for the program is stored in `\x64/Debug` and should not be moved.
+Executable for the program is stored in `\Easy-cook` and should not be moved.
 
 ### Shop List
  
-In here user can manipulate Shop list with products to buy in a light txt file.
+In Shop list menu, user can manipulate Shop list with products to buy in a light txt file.
 File is automatically created if missing in `\Easy-cook\ShopList`.
+Select "View shop list" to display items on the list.
+Select "Modify shop list" to edit or delete items from shop list.
 
 ### Recipes menu
 
-In here user is able to search through database containing detailed recipes using tags.
-If recipe sounds interesting, user can save it in the small csv to access it later through My List menu.
+In recipe menu, user is able to search through database containing detailed recipes using tags.
+User can search with up to 3 tags(case sensitive).
+If recipe sounds interesting, user can save it in My list to access it later through My List menu.
 
 ### My list
 
-Here user can select their's favorite recipes and view them in detail.
+In "My list" menu, user can view his list of favorite recipes and view them in detail.
 
 ## Recipes Database format
 
-The RecipesDB should be placed in `\Easy-ccok\RecipesDB`.
+The RecipesDB should be placed in `\Easy-cook\RecipesDB`.
 The JSON should have the following structure to work correctly:
 
     {
