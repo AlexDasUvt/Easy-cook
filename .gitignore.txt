@@ -1,4 +1,9 @@
 $ cat .gitignore
 .vs/
+x64/
+packages/
+*.vcxproj
+*.filters
+*.user
+*.sln
 *.docx
-ShopList.txt
