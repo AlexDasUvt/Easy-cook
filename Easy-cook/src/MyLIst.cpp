@@ -17,9 +17,16 @@ void MyList::ShowMyList() {
     }
 
     string line;
+    bool isEmpty = true;
     cout << "\n";
     while (getline(file, line)) {
+        if (isEmpty && !line.empty()) {
+            isEmpty = false;
+        }
         cout << line << endl;
+    }
+    if (isEmpty) {
+        cout << "My list is empty" << endl;
     }
     cout << "\n";
     file.close();
