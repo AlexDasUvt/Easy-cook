@@ -7,9 +7,12 @@
 #define MY_LIST "MyList.csv"
 
 using namespace std;
-using json = nlohmann::json;
+using json = nlohmann::json; // json library to work with json files.
 
 void MyList::ShowMyList() {
+    /*
+        Displays contents of MyList saved in .csv.
+    */
     ifstream file(MY_LIST);
     if (!file.is_open()) {
         cout << "Unable to open file recipes.csv" << endl;
@@ -33,6 +36,9 @@ void MyList::ShowMyList() {
 }
 
 void MyList::ViewRecipe(int id) {
+    /*
+        This function takes ID of the recipe and outputs all information about it.
+    */
     ifstream file("RecipesDB/RecipesDB.json");
     if (!file.is_open()) {
         cout << "Unable to open recipes database file" << endl;
@@ -67,6 +73,9 @@ void MyList::ViewRecipe(int id) {
 }
 
 void MyList::run() {
+    /*
+        A Menu-like function with infinite while loop.
+    */
     
     while (true) {
         int menu;

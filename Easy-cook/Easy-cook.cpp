@@ -11,6 +11,9 @@ int main()
 	int menu;
 
 	while (true) {
+		/*
+			Infinite loop representing a menu.
+		*/
 		cout << "Welcome to Easy-cook!\n" << "Which option you would like to choose?\n" << "1. Recipes menu\n" << "2. Shop list\n" << "3. My lists\n" << "4. Exit\n" << endl;
 		cin >> menu;
 		system("cls");

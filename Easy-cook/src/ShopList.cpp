@@ -16,6 +16,9 @@ public:
 };
 
 ShopList::ShopList() {
+	/*
+		Searches for ShopList and creates if not found.
+	*/
 	ifstream file(FILENAME);
 	if (!file) {
 		cout << "Unable to find ShopList.\n" << endl;
@@ -31,6 +34,9 @@ ShopList::ShopList() {
 }
 
 void ShopList::LineModifyDelete(int lineNum, const string newContent = "") {
+	/*
+		Function searches for line to edit(starting from third) and edits/deletes it.
+	*/
 	ifstream inFile(FILENAME);
 
 	ofstream outFile("ShopList/temp.txt");
@@ -80,6 +86,9 @@ void ShopList::LineModifyDelete(int lineNum, const string newContent = "") {
 }
 
 int ShopList::ViewShopList() {
+	/*
+		Function displays all rows in .txt(starting from third). Function is of type int to return 0 if List is empty.
+	 */
 	ifstream file(FILENAME);
 
 	string line;
@@ -102,6 +111,9 @@ int ShopList::ViewShopList() {
 }
 
 void ShopList::ModifyShopList() {
+	/*
+		Function combining ViewShopList() and LineModifyDelete() to modify shoplist according to commands.
+	*/
 	while (true) {
 		if (ShopList::ViewShopList() == 0) {
 			cout << "The list is empty!\n" << endl;
@@ -151,6 +163,9 @@ void ShopList::ModifyShopList() {
 }
 
 void shopList() {
+	/*
+		Menu-like representation of ShopList with infinite loop.
+	*/
 	int menu;
 	ShopList shp = ShopList();
 

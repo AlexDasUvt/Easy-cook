@@ -10,7 +10,7 @@
 
 #define RECIPEDB "RecipesDB/RecipesDB.json"
 using namespace std;
-using json = nlohmann::json;
+using json = nlohmann::json; // json library to work with json files.
 
 RecipeManager::RecipeManager() {
 	loadRecipes();
@@ -31,6 +31,9 @@ void RecipeManager::loadRecipes() {
 }
 
 void RecipeManager::countTags() {
+	/*
+		Counts tags apperaing in the recipes.
+	*/
 	if (!data.contains("recipes") || !data["recipes"].is_array()) {
 		cout << "The JSON structure is not as expected!" << endl;
 		return;
@@ -64,6 +67,9 @@ vector<string> RecipeManager::getInputTags() {
 }
 
 void RecipeManager::searchRecipes(const vector<string>& input_tags) {
+	/*
+		This function takes tags to search for and outputs recipes ID and Name with searched tags.
+	*/
 	unordered_set<string> search_tags(input_tags.begin(), input_tags.end());
 
 	cout << "\nSearch results:" << endl;
@@ -110,6 +116,9 @@ bool RecipeManager::searchAgain() {
 }
 
 void RecipeManager::ViewRecipe(int id) {
+	/*
+		Override of the parent function. Saves recipe ID and Name to the .csv representing MyList.
+	*/
 	ofstream csvFile("MyList.csv", ios::app);
 	if (!csvFile.is_open()) {
 		cout << "Could not open the CSV file!" << endl;
@@ -128,6 +137,9 @@ void RecipeManager::ViewRecipe(int id) {
 }
 
 void RecipeManager::run() {
+	/*
+		A Menu-like function with infinite while loop.
+	*/
 	if (!fileLoaded) {
 		cout << "Could not open the file!" << endl;
 		return;

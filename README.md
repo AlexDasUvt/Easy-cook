@@ -23,6 +23,7 @@ Select "Modify shop list" to edit or delete items from shop list.
 In recipe menu, user is able to search through database containing detailed recipes using tags.
 User can search with up to 3 tags(case sensitive).
 If recipe sounds interesting, user can save it in My list to access it later through My List menu.
+User can view recipe in detailed without saving it through View Recipe function in My List menu.
 
 ### My list
 
@@ -44,6 +45,6 @@ The JSON should have the following structure to work correctly:
 	...
 	},
 	"steps": "Step 1. step 2. step 3", // Instructions on how to execute recipe
-	"tags": [ "Italian", "Pasta", "Quick" ] // Tags used to identify recipe in search
+	"tags": [ "Tag1", "Tag2", "Tag3" ] // Tags used to identify recipe in search
 	}]
 	}
